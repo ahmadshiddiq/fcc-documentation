@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="navbar" class="col-md-3 border-right py-4">
+          <header>
+            <h4 class="text-center">Bootstrap Documentation</h4>
+          </header>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#Getting_started" class="nav-link">Getting Started</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Layout" class="nav-link">Layout</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Content" class="nav-link">Content</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Components" class="nav-link">Components</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Utilities" class="nav-link">Utilities</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Extend" class="nav-link">Extend</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Migration" class="nav-link">Migration</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About" class="nav-link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <main id="main-doc" class="col-md-9 py-4">
+          <section id="Getting_started" class="main-section">
+            <header>
+              <h3>getting started</h3>
+            </header>
+            <hr />
+            <h5>Quick Start</h5>
+            <p>
+              Looking to quickly add Bootstrap to your project? Use
+              BootstrapCDN, provided for free by the folks at StackPath. Using a
+              package manager or need to download the source files? Head to the
+              downloads page.
+            </p>
+            <h5>Important globals</h5>
+            <p>
+              Bootstrap employs a handful of important global styles and
+              settings that you’ll need to be aware of when using it, all of
+              which are almost exclusively geared towards the normalization of
+              cross browser styles. Let’s dive in.
+            </p>
+            <h5>Responsive meta tag</h5>
+            <p>
+              Bootstrap is developed mobile first, a strategy in which we
+              optimize code for mobile devices first and then scale up
+              components as necessary using CSS media queries. To ensure proper
+              rendering and touch zooming for all devices, add the responsive
+              viewport meta tag to your <code>head</code>.
+            </p>
+            <h5>Box-sizing</h5>
+            <p>
+              For more straightforward sizing in CSS, we switch the global
+              <code>box-sizing</code> value from <code>content-box</code> to
+              <code>border-box</code>. This ensures <code>padding</code> does
+              not affect the final computed width of an element, but it can
+              cause problems with some third party software like Google Maps and
+              Google Custom Search Engine
+            </p>
+          </section>
+          <section id="Layout" class="main-section">
+            <header>
+              <h3>layout</h3>
+            </header>
+            <hr />
+            <h5>Containers</h5>
+            <p>
+              Containers are the most basic layout element in Bootstrap and are
+              required when using our default grid system. Containers are used
+              to contain, pad, and (sometimes) center the content within them.
+              While containers can be nested, most layouts do not require a
+              nested container.
+            </p>
+          </section>
+          <section id="Content" class="main-section">
+            <header>
+              <h3>content</h3>
+            </header>
+            <hr />
+            <h5>Approach</h5>
+            <p>
+              Reboot builds upon Normalize, providing many HTML elements with
+              somewhat opinionated styles using only element selectors.
+              Additional styling is done only with classes. For example, we
+              reboot some <code>table</code> styles for a simpler baseline and
+              later provide <code>.table</code> , <code>.table-bordered</code>,
+              and more.
+            </p>
+          </section>
+          <section id="Components" class="main-section">
+            <header>
+              <h3>components</h3>
+            </header>
+            <hr />
+            <h5>Examples</h5>
+            <p>
+              Alerts are available for any length of text, as well as an
+              optional dismiss button. For proper styling, use one of the eight
+              required contextual classes (e.g., .alert-success). For inline
+              dismissal, use the alerts jQuery plugin.
+            </p>
+          </section>
+          <section id="Utilities" class="main-section">
+            <header>
+              <h3>utilities</h3>
+            </header>
+            <hr />
+            <h5>Border</h5>
+            <p>
+              Use border utilities to add or remove an element’s borders. Choose
+              from all borders or one at a time.
+            </p>
+          </section>
+          <section id="Extend" class="main-section">
+            <header>
+              <h3>extend</h3>
+            </header>
+            <hr />
+            <h5>Summary</h5>
+            <p>
+              We’ll dive into each of these more throughout, but at a high
+              level, here’s what guides our approach.
+            </p>
+            <ul>
+              <li>Components should be responsive and mobile-first</li>
+              <li>
+                Components should be built with a base class and extended via
+                modifier classes
+              </li>
+              <li>Component states should obey a common z-index scale</li>
+              <li>
+                Whenever possible, prefer a HTML and CSS implementation over
+                JavaScript
+              </li>
+              <li>Whenever possible, use utilities over custom styles</li>
+              <li>
+                Whenever possible, avoid enforcing strict HTML requirements
+                (children selectors)
+              </li>
+            </ul>
+          </section>
+          <section id="Migration" class="main-section">
+            <header>
+              <h3>migration</h3>
+            </header>
+            <hr />
+            <h5>Stable changes</h5>
+            <p>
+              Moving from Beta 3 to our stable v4.x release, there are no
+              breaking changes, but there are some notable changes.
+            </p>
+          </section>
+          <section id="About" class="main-section">
+            <header>
+              <h3>about</h3>
+            </header>
+            <hr />
+            <h5>Team</h5>
+            <p>
+              Bootstrap is maintained by a small team of developers on GitHub.
+              We’re actively looking to grow this team and would love to hear
+              from you if you’re excited about CSS at scale, writing and
+              maintaining vanilla JavaScript plugins, and improving build
+              tooling processes for frontend code.
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

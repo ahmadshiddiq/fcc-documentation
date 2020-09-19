@@ -1,0 +1,9 @@
+.main-section header h3 {
+  text-transform: capitalize;
+}
+.main-section {
+  margin-bottom: 25px;
+}
+.main-section:last-child {
+  margin-bottom: 0;
+}
